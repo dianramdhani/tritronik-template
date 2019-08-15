@@ -1,0 +1,30 @@
+{
+  "name": "tritronik-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/libs/tritronik/scss/tritronik.scss assets/libs/tritronik/css/tritronik.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianramdhani/tritronik-template.git"
+  },
+  "author": "Dian Ramdhani Lubis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dianramdhani/tritronik-template/issues"
+  },
+  "homepage": "https://github.com/dianramdhani/tritronik-template#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
