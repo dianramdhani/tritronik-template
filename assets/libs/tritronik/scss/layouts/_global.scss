@@ -12,5 +12,6 @@ body {
     color: #868ba1;
     text-align: left;
     background-color: #f0f2f7;
-    overflow-x: hidden;
+    border: $border-default;
+    overflow: hidden;
 }

@@ -1,5 +1,6 @@
 .tr-header {
     display: flex;
     height: $tr-header-height;
-    @include test($color: red);
+    background-color: #fff;
+    border-bottom: $border-default;
 }

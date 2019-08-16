@@ -5,6 +5,8 @@
     transition: all 0.2s ease-in-out;
     flex-shrink: 0;
     margin-left: calc(-1 * #{$tr-sidebar-width});
+    border-right: $border-default;
+    overflow-y: auto;
 }
 
 @media (min-width: 900px) {
