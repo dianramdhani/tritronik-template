@@ -315,7 +315,8 @@ body {
   line-height: 1.5;
   color: #868ba1;
   text-align: left;
-  background-color: #f0f2f7; }
+  background-color: #f0f2f7;
+  overflow-x: hidden; }
 
 .tr-header {
   display: flex;
@@ -346,7 +347,7 @@ body {
 
 @media (max-width: 900px) {
   .tr-show-sidebar .tr-sidebar {
-    margin-left: 0; } }
+    margin-left: calc(-1 * 300px); } }
 
 .tr-body .tr-mainpanel {
   flex: 1;
@@ -390,3 +391,8 @@ body {
         font-size: 14px; } }
     .tr-body .tr-mainpanel .tr-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       color: #ced4da; }
+
+@media (max-width: 900px) {
+  .tr-show-sidebar .tr-body {
+    display: flex;
+    transform: translateX(300px); } }

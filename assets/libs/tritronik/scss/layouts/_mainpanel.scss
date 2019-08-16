@@ -56,3 +56,10 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .tr-show-sidebar .tr-body {
+        display: flex;
+        transform: translateX($tr-sidebar-width);
+    }
+}

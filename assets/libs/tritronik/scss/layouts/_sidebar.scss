@@ -21,6 +21,6 @@
 
 @media (max-width: 900px) {
     .tr-show-sidebar .tr-sidebar {
-        margin-left: 0;
+        margin-left: calc(-1 * #{$tr-sidebar-width});
     }
 }
