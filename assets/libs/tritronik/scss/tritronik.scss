@@ -1,2 +1,13 @@
 // Vendors
 @import '../../../../node_modules/normalize.css/normalize';
+
+// Helpers
+@import 'helpers/variables';
+
+// Test
+@import 'test';
+
+// Layouts
+@import 'layouts/global';
+@import 'layouts/header';
+@import 'layouts/body';
