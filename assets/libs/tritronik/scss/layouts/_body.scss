@@ -1,45 +1,5 @@
-// .tr-body
 .tr-body {
     display: flex;
-    min-height: calc(100% - #{$tr-header-height});
+    min-height: calc(100vh - #{$tr-header-height});
     transition: all 0.2s ease-in-out;
-}
-
-// .tr-sidebar
-.tr-sidebar {
-    width: $tr-sidebar-width;
-    background-color: #fff;
-    padding: 20px 0;
-    transition: all 0.2s ease-in-out;
-    flex-shrink: 0;
-    margin-left: calc(-1 * #{$tr-sidebar-width});
-}
-
-@media (min-width: 900px) {
-    .tr-sidebar {
-        margin-left: 0;
-    }
-}
-
-// .tr-hide-sidebar
-@media (min-width: 900px) {
-    .tr-hide-sidebar .tr-sidebar {
-        margin-left: calc(-1 * #{$tr-sidebar-width});
-    }
-}
-
-// .tr-show-sidebar
-@media (max-width: 900px) {
-    .tr-show-sidebar .tr-sidebar {
-        margin-left: 0;
-    }
-}
-
-// .tr-mainpanel
-.tr-body .tr-mainpanel {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    @include test($color: blue);
 }

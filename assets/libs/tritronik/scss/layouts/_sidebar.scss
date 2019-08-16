@@ -1,0 +1,26 @@
+.tr-sidebar {
+    width: $tr-sidebar-width;
+    background-color: #fff;
+    padding: 20px 0;
+    transition: all 0.2s ease-in-out;
+    flex-shrink: 0;
+    margin-left: calc(-1 * #{$tr-sidebar-width});
+}
+
+@media (min-width: 900px) {
+    .tr-sidebar {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .tr-hide-sidebar .tr-sidebar {
+        margin-left: calc(-1 * #{$tr-sidebar-width});
+    }
+}
+
+@media (max-width: 900px) {
+    .tr-show-sidebar .tr-sidebar {
+        margin-left: 0;
+    }
+}
