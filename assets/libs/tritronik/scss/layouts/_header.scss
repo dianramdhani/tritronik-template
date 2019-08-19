@@ -3,4 +3,33 @@
     height: $tr-header-height;
     background-color: #fff;
     border-bottom: $border-default;
+
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tr-header-left,
+    .tr-header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .tr-logo img {
+        height: calc(#{$tr-header-height} - 20px);
+        margin-left: 15px;
+    }
+
+    .tr-sidebar-menu {
+        margin-right: 15px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid #ccc;
+        flex-shrink: 0;
+    }
 }

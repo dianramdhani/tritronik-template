@@ -324,6 +324,27 @@ body {
   height: 75px;
   background-color: #fff;
   border-bottom: 1px solid #ccc; }
+  .tr-header .container-fluid {
+    display: flex;
+    justify-content: space-between; }
+  .tr-header .tr-header-left,
+  .tr-header .tr-header-right {
+    display: flex;
+    align-items: center; }
+  .tr-header .tr-logo img {
+    height: calc(75px - 20px);
+    margin-left: 15px; }
+  .tr-header .tr-sidebar-menu {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #ccc;
+    flex-shrink: 0; }
 
 .tr-body {
   display: flex;
